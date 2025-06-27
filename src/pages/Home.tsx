@@ -61,7 +61,7 @@ const Home: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.5 }}
         >
-          <a href="https://www.linkedin.com/in/abdessamad-elfouri-a66a38370/" target="_blank" rel="noopener noreferrer" className="btn-secondary">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/abdessamad-el-fouri-a66a38370/" target="_blank" rel="noopener noreferrer" className="btn-secondary">LinkedIn</a>
           <a href="https://github.com/ELfouri-AI-Solution" target="_blank" rel="noopener noreferrer" className="btn-secondary">GitHub</a>
           <a href="/cv.pdf" download className="btn-primary">{t('home.download_cv')}</a>
           <a href="mailto:elfouri.ai.solution2026@gmail.com" className="btn-secondary">Email</a>
