@@ -4,6 +4,6 @@
     "description": "Portfolio web moderne, responsive et animé, présentant mon parcours, mes compétences et mes projets en Intelligence Artificielle.",
     "technologies": ["React.js", "TypeScript", "Tailwind CSS", "Framer Motion", "GitHub Pages"],
     "github": "https://github.com/ELfouri-AI-Solution/portfolio-elfouri",
-    "image": "project-portfolio.png"
+    "image": "/assets/images/project-portfolio.png"
   }
 ] 
