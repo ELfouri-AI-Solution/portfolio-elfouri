@@ -87,7 +87,7 @@ const Contact: React.FC = () => {
           <div>
             <h3 className="font-semibold mb-2 text-lg">{t('contact.networks')}</h3>
             <div className="flex space-x-4">
-              <a href="https://www.linkedin.com/in/abdessamad-elfouri-a66a38370/" target="_blank" rel="noopener noreferrer" className="btn-secondary">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/abdessamad-el-fouri-a66a38370/" target="_blank" rel="noopener noreferrer" className="btn-secondary">LinkedIn</a>
               <a href="https://github.com/ELfouri-AI-Solution" target="_blank" rel="noopener noreferrer" className="btn-secondary">GitHub</a>
             </div>
           </div>

@@ -5,6 +5,17 @@ import { useLanguage } from '../contexts/LanguageContext';
 import profileImage from '../assets/images/profile.jpg';
 import { FaLanguage, FaAward, FaUserTie, FaBrain, FaTools, FaStar, FaBiking, FaSwimmer, FaUsers } from 'react-icons/fa';
 
+// Correction TS2786 : typage explicite
+const FaLanguageIcon = FaLanguage as React.FunctionComponent<{ size?: number; className?: string }>;
+const FaAwardIcon = FaAward as React.FunctionComponent<{ size?: number; className?: string }>;
+const FaUserTieIcon = FaUserTie as React.FunctionComponent<{ size?: number; className?: string }>;
+const FaBrainIcon = FaBrain as React.FunctionComponent<{ size?: number; className?: string }>;
+const FaToolsIcon = FaTools as React.FunctionComponent<{ size?: number; className?: string }>;
+const FaStarIcon = FaStar as React.FunctionComponent<{ size?: number; className?: string }>;
+const FaBikingIcon = FaBiking as React.FunctionComponent<{ size?: number; className?: string }>;
+const FaSwimmerIcon = FaSwimmer as React.FunctionComponent<{ size?: number; className?: string }>;
+const FaUsersIcon = FaUsers as React.FunctionComponent<{ size?: number; className?: string }>;
+
 const pageVariants = {
   initial: { opacity: 0, x: -50 },
   animate: { opacity: 1, x: 0, transition: { duration: 0.5 } },
@@ -75,7 +86,7 @@ const About: React.FC = () => (
           </blockquote>
         </div>
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-          <h3 className="flex items-center gap-2 text-lg font-semibold mb-2"><FaLanguage /> Langues</h3>
+          <h3 className="flex items-center gap-2 text-lg font-semibold mb-2"><FaLanguageIcon size={20} /> Langues</h3>
           <div className="flex flex-wrap gap-2">
             <span className="badge">Chinois</span>
             <span className="badge">Arabe</span>
@@ -84,7 +95,7 @@ const About: React.FC = () => (
           </div>
         </div>
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-          <h3 className="flex items-center gap-2 text-lg font-semibold mb-2"><FaUserTie /> Atouts</h3>
+          <h3 className="flex items-center gap-2 text-lg font-semibold mb-2"><FaUserTieIcon size={20} /> Atouts</h3>
           <ul className="list-disc ml-5 text-gray-700 dark:text-gray-300 space-y-1">
             <li>Adaptabilité aux changements technologiques</li>
             <li>Travail en équipe multidisciplinaire</li>
@@ -103,7 +114,7 @@ const About: React.FC = () => (
       {/* Colonne 2 : Diplômes & Compétences */}
       <div className="flex flex-col gap-6">
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-          <h3 className="flex items-center gap-2 text-lg font-semibold mb-2"><FaAward /> Diplômes & Formations</h3>
+          <h3 className="flex items-center gap-2 text-lg font-semibold mb-2"><FaAwardIcon size={20} /> Diplômes & Formations</h3>
           <ul className="list-disc ml-5 text-gray-700 dark:text-gray-300 space-y-1">
             <li>4ème année cycle ingénieurs, Intelligence artificielle (Depuis octobre 2024, ISMAGI Rabat)</li>
             <li>Licence Pro, Développement Web et Mobile (Depuis août 2023, ISMAGI Rabat)</li>
@@ -113,7 +124,7 @@ const About: React.FC = () => (
           </ul>
         </div>
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-          <h3 className="flex items-center gap-2 text-lg font-semibold mb-2"><FaBrain /> Compétences</h3>
+          <h3 className="flex items-center gap-2 text-lg font-semibold mb-2"><FaBrainIcon size={20} /> Compétences</h3>
           <div className="flex flex-wrap gap-2 mb-2">
             <span className="badge">AWS</span>
             <span className="badge">Node.js</span>
@@ -150,7 +161,7 @@ const About: React.FC = () => (
       {/* Colonne 3 : Expériences & Centres d'intérêt */}
       <div className="flex flex-col gap-6">
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-          <h3 className="flex items-center gap-2 text-lg font-semibold mb-2"><FaTools /> Expériences professionnelles</h3>
+          <h3 className="flex items-center gap-2 text-lg font-semibold mb-2"><FaToolsIcon size={20} /> Expériences professionnelles</h3>
           <ul className="list-disc ml-5 text-gray-700 dark:text-gray-300 space-y-1">
             <li><b>Développeur full stack</b> (Depuis mars 2023, Rabat) : Solutions IA pour la cybersécurité, détection de phishing, agents intelligents, NLP, cloud, tests, développement sur mesure.</li>
             <li><b>Agent Support Technique</b> (Avril 2023 - Juillet 2023, Label Vie Skhirat) : Support technique, résolution de problèmes informatiques.</li>
@@ -158,11 +169,11 @@ const About: React.FC = () => (
           </ul>
         </div>
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-          <h3 className="flex items-center gap-2 text-lg font-semibold mb-2"><FaStar /> Centres d'intérêt</h3>
+          <h3 className="flex items-center gap-2 text-lg font-semibold mb-2"><FaStarIcon size={20} /> Centres d'intérêt</h3>
           <div className="flex flex-wrap gap-2">
-            <span className="badge"><FaBiking className="inline mr-1" /> Mountain bike</span>
-            <span className="badge"><FaSwimmer className="inline mr-1" /> Surf</span>
-            <span className="badge"><FaUsers className="inline mr-1" /> Hybrid athlete</span>
+            <span className="badge"><FaBikingIcon size={16} className="inline mr-1" /> Mountain bike</span>
+            <span className="badge"><FaSwimmerIcon size={16} className="inline mr-1" /> Surf</span>
+            <span className="badge"><FaUsersIcon size={16} className="inline mr-1" /> Hybrid athlete</span>
             <span className="badge">Réseaux sociaux</span>
           </div>
         </div>
