@@ -65,57 +65,49 @@ const About: React.FC = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        {t('about.title')}
+        À propos de moi
       </motion.h2>
       <div className="grid md:grid-cols-2 gap-12">
         <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }}>
-          <h3 className="text-xl font-semibold mb-2">{t('about.journey')}</h3>
+          <h3 className="text-xl font-semibold mb-2">Présentation</h3>
           <p className="mb-4 text-gray-700 dark:text-gray-300">
-            {t('about.journey_text')}
+            Je suis Abdessamad Elfouri, étudiant en 4ème année cycle Ingénieur IA / Full stack développeur | Consultant en Solutions Digitales. Passionné par l'innovation, la cybersécurité et le développement full stack, ma mission est de rendre la technologie plus sécurisée, intelligente et accessible. J'ai une solide expertise technique et une passion pour la création de solutions digitales innovantes. Fort de 5 années d'expérience dans le développement de sites web et d'applications multimédia, je maîtrise les langages de programmation modernes et les principes de design interactif. Mon engagement pour l'excellence et ma capacité à travailler en équipe me permettent de mener à bien des projets complexes, tout en garantissant une expérience utilisateur optimale.
           </p>
-          <h3 className="text-xl font-semibold mb-3 mt-6">{t('about.skills')}</h3>
-          <motion.div
-            variants={listContainerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="flex flex-wrap gap-3 mb-4"
-          >
-            {skills.map((skill) => (
-              <motion.div
-                key={skill.name}
-                variants={listItemVariants}
-                className="flex items-center space-x-2 px-3 py-2 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-sm"
-              >
-                {skill.icon}
-                <span>{skill.name}</span>
-              </motion.div>
-            ))}
-          </motion.div>
-          <h3 className="text-xl font-semibold mb-3 mt-6">{t('about.languages')}</h3>
-          <motion.ul
-            variants={listContainerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="mb-4 space-y-2"
-          >
-            {languages.map((lang) => (
-              <motion.li key={lang.name} variants={listItemVariants} className="text-gray-700 dark:text-gray-300">{lang.name} <span className="text-sm text-gray-500">({lang.level})</span></motion.li>
-            ))}
-          </motion.ul>
-          <h3 className="text-xl font-semibold mb-3 mt-6">{t('about.interests')}</h3>
-          <motion.ul
-            variants={listContainerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="flex flex-wrap gap-2"
-          >
-            {interests.map((interest) => (
-              <motion.li key={interest} variants={listItemVariants} className="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 rounded-full text-sm font-medium">{interest}</motion.li>
-            ))}
-          </motion.ul>
+          <h3 className="text-xl font-semibold mb-3 mt-6">Langues</h3>
+          <ul className="mb-4 space-y-2">
+            <li>Chinois</li>
+            <li>Arabe</li>
+            <li>Français</li>
+            <li>Anglais</li>
+          </ul>
+          <h3 className="text-xl font-semibold mb-3 mt-6">Atouts</h3>
+          <ul className="mb-4 space-y-2">
+            <li>Adaptabilité aux changements technologiques</li>
+            <li>Travail en équipe multidisciplinaire</li>
+            <li>Créativité dans la conception de solutions logicielles</li>
+            <li>Réactivité aux changements</li>
+            <li>Diplomatie dans la gestion des conflits</li>
+            <li>Sens aiguisé analytique et stratégique</li>
+            <li>Négociation avec les fournisseurs de services cloud</li>
+            <li>Capacité à résoudre des problèmes complexes</li>
+            <li>Cohésion et motivation au sein d'une équipe collaborative</li>
+            <li>Tolérance au stress</li>
+            <li>Aptitude à former les utilisateurs finaux</li>
+          </ul>
+          <h3 className="text-xl font-semibold mb-3 mt-6">Diplômes et Formations</h3>
+          <ul className="mb-4 space-y-2">
+            <li>4ème année cycle ingénieurs, Intelligence artificielle (Depuis octobre 2024, ISMAGI Rabat)</li>
+            <li>Licence Professionnelle, Développement Web et Mobile (Depuis août 2023, ISMAGI Rabat, Maroc)</li>
+            <li>Technicien Spécialisé en Développement Informatique (Octobre 2023 - Juin 2024, ISTA NTIC Rabat)</li>
+            <li>Attestation, Routage et Communication Initiation aux Réseaux (Novembre 2023 - Juin 2024, ISTA NTIC Rabat)</li>
+            <li>Attestation, Fundamentals Big Data Analytics (Octobre 2023 - Juin 2024, ISTA NTIC Rabat)</li>
+            <li>Attestation, Programming Essentials in C (Octobre 2023 - Mars 2024, ISTA NTIC Rabat)</li>
+            <li>Attestation, Programming Using HTML & CSS (Septembre 2023 - Février 2024, ISTA NTIC Rabat)</li>
+            <li>Attestation, IT Essentials (Novembre 2023 - Janvier 2024, ISTA NTIC Rabat)</li>
+            <li>Attestation, Get Connected (Octobre 2023 - Décembre 2023, ISTA NTIC Rabat)</li>
+            <li>Attestation, Programming Essentials In PYTHON (Octobre 2023 - Juin 2024, ISTA NTIC Rabat)</li>
+            <li>Baccalauréat, Option Sciences de la Vie et de la Terre (Novembre 2023 - Juin 2024, Lycée Brahim Roudani Rabat)</li>
+          </ul>
         </motion.div>
         <motion.div
           className="flex flex-col items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 p-8 rounded-xl shadow-xl"
@@ -156,7 +148,7 @@ const About: React.FC = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.8 }}
           >
-            {t('about.role')}
+            Etudiant 4ème année cycle Ingénieur IA / Full stack développeur | Consultant en Solutions Digitales
           </motion.p>
           <motion.p
             className="text-lg text-center text-gray-700 dark:text-gray-300 italic"
@@ -165,8 +157,36 @@ const About: React.FC = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.9 }}
           >
-            "{t('about.quote')}"
+            "L'intelligence artificielle n'est pas le futur, c'est le présent qui façonne demain."
           </motion.p>
+          <h3 className="text-xl font-semibold mb-3 mt-6">Compétences</h3>
+          <ul className="mb-4 space-y-2 text-left">
+            <li>Déploiement sur serveurs cloud AWS</li>
+            <li>Développement back-end Node.js</li>
+            <li>Création d'interfaces utilisateur</li>
+            <li>Développement front-end React</li>
+            <li>Python, SQL, JavaScript, C++</li>
+            <li>TensorFlow, Scikit-learn, LangChain</li>
+            <li>spaCy, Transformers, ChatGPT API</li>
+            <li>Git, VSCode, Docker, Streamlit</li>
+            <li>PostgreSQL, MongoDB</li>
+            <li>PHP, React.js, Node.js, Vue.js, Spring-boot</li>
+            <li>Android (Java, Dart, SQLite)</li>
+            <li>Java, HTML, CSS, Big Data Analytics, Réseaux (CCNA), Création d'API RESTful</li>
+          </ul>
+          <h3 className="text-xl font-semibold mb-3 mt-6">Expériences professionnelles</h3>
+          <ul className="mb-4 space-y-2 text-left">
+            <li><b>Développeur full stack</b> (Depuis mars 2023, Rabat, Maroc) : Conception de solutions IA pour la cybersécurité, détection de phishing, création d'agents intelligents, intégration de modèles NLP, déploiement cloud, configuration d'infrastructures, tests unitaires, développement d'applications selon les besoins clients.</li>
+            <li><b>Agent Support Technique</b> (Avril 2023 - Juillet 2023, Label Vie Skhirat, Maroc) : Support technique aux utilisateurs, résolution de problèmes informatiques.</li>
+            <li><b>Support Technique</b> (Depuis novembre 2022, Ayouris Rabat) : Assistance et dépannage des équipements informatiques, maintenance préventive et corrective.</li>
+          </ul>
+          <h3 className="text-xl font-semibold mb-3 mt-6">Centres d'intérêt</h3>
+          <ul className="mb-4 space-y-2">
+            <li>Hybrid athlete</li>
+            <li>Mountain bike</li>
+            <li>Surf</li>
+            <li>Réseaux sociaux</li>
+          </ul>
         </motion.div>
       </div>
     </motion.section>

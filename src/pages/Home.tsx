@@ -37,7 +37,7 @@ const Home: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.5 }}
         >
-          {t('home.title')}
+          Abdessamad ELFOURI
         </motion.h1>
         <motion.h2
           className="text-xl sm:text-2xl font-semibold text-primary-600 dark:text-primary-400 mb-4"
@@ -45,7 +45,7 @@ const Home: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.5 }}
         >
-          {t('home.subtitle')}
+          Étudiant 4ème année cycle Ingénieur IA / Full stack développeur | Consultant en Solutions Digitales
         </motion.h2>
         <motion.p
           className="text-lg text-gray-700 dark:text-gray-300 mb-6 max-w-2xl mx-auto md:mx-0"
@@ -53,7 +53,7 @@ const Home: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.5 }}
         >
-          {t('home.description')}
+          Je suis un étudiant en 4ème année de cycle ingénieur, passionné par l'innovation, la cybersécurité et le développement full stack. Ma mission est de rendre la technologie plus sécurisée, intelligente et accessible. Un poste expérimenté, je possède une solide expertise technique et une passion pour la création de solutions digitales innovantes. Fort de 5 années d'expérience dans le développement de sites web et d'applications multimédia, j'ai une maîtrise approfondie des langages de programmation modernes et des principes de design interactif. Mon engagement pour l'excellence et ma capacité à travailler en équipe me permettent de mener à bien des projets complexes, tout en garantissant une expérience utilisateur optimale.
         </motion.p>
         <motion.div
           className="flex flex-wrap gap-4 mb-6 justify-center md:justify-start"
@@ -63,8 +63,9 @@ const Home: React.FC = () => {
         >
           <a href="https://www.linkedin.com/in/abdessamad-el-fouri-a66a38370/" target="_blank" rel="noopener noreferrer" className="btn-secondary">LinkedIn</a>
           <a href="https://github.com/ELfouri-AI-Solution" target="_blank" rel="noopener noreferrer" className="btn-secondary">GitHub</a>
-          <a href="/cv.pdf" download className="btn-primary">{t('home.download_cv')}</a>
+          <a href="/cv.pdf" download className="btn-primary">Télécharger CV</a>
           <a href="mailto:elfouri.ai.solution2026@gmail.com" className="btn-secondary">Email</a>
+          <a href="tel:+212719913847" className="btn-secondary">+212719913847</a>
         </motion.div>
         <motion.blockquote
           className="italic text-gray-500 dark:text-gray-400 border-l-4 border-primary-600 pl-4"
@@ -72,7 +73,7 @@ const Home: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.5 }}
         >
-          "{t('home.quote')}"
+          "L'intelligence artificielle n'est pas le futur, c'est le présent qui façonne demain."
         </motion.blockquote>
       </div>
     </motion.section>
