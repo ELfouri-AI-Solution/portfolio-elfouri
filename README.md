@@ -18,8 +18,8 @@ Ce projet est un portfolio web moderne, responsive et animé, conçu pour prése
 1. **Cloner le repo**
 
 ```bash
-git clone https://github.com/ELfouri-AI-Solution/portfolio-ia.git
-cd portfolio-ia
+git clone https://github.com/ELfouri-AI-Solution/portfolio-elfouri.git
+cd portfolio-elfouri
 ```
 
 2. **Installer les dépendances**
@@ -51,7 +51,7 @@ Le site sera accessible sur [http://localhost:3000](http://localhost:3000)
    ```
 2. Ajoute dans `package.json` :
    ```json
-   "homepage": "https://<ton-utilisateur>.github.io/<nom-du-repo>"
+   "homepage": "https://<ELfouri-AI-Solution>.github.io/<portfolio-elfouri>"
    ```
 3. Ajoute les scripts suivants :
    ```json
