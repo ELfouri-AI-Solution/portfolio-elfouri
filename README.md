@@ -1,46 +1,77 @@
-# Getting Started with Create React App
+# Portfolio IA – Abdessamad ELFOURI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet est un portfolio web moderne, responsive et animé, conçu pour présenter le parcours, les compétences et les projets d’un étudiant ingénieur en Intelligence Artificielle.
 
-## Available Scripts
+## 🚀 Aperçu
 
-In the project directory, you can run:
+- **Technos** : React.js, TypeScript, Tailwind CSS, Framer Motion, API GitHub
+- **Fonctionnalités** :
+  - Mode sombre/clair
+  - Filtres dynamiques sur les projets
+  - Intégration automatique des projets publics GitHub
+  - Téléchargement du CV
+  - Formulaire de contact
+  - SEO (balises meta, Open Graph)
 
-### `npm start`
+## 📦 Installation & Développement
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. **Cloner le repo**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+git clone https://github.com/ELfouri-AI-Solution/portfolio-ia.git
+cd portfolio-ia
+```
 
-### `npm test`
+2. **Installer les dépendances**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+```
 
-### `npm run build`
+3. **Lancer le serveur de développement**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Le site sera accessible sur [http://localhost:3000](http://localhost:3000)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🌐 Déploiement
 
-### `npm run eject`
+### Sur Vercel (recommandé)
+1. Crée un compte sur [vercel.com](https://vercel.com/)
+2. Clique sur "New Project" et connecte ton repo GitHub
+3. Vercel détecte automatiquement React (Create React App)
+4. Clique sur "Deploy" : ton portfolio sera en ligne en quelques secondes !
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Sur GitHub Pages
+1. Installe le package de déploiement :
+   ```bash
+   npm install --save gh-pages
+   ```
+2. Ajoute dans `package.json` :
+   ```json
+   "homepage": "https://<ton-utilisateur>.github.io/<nom-du-repo>"
+   ```
+3. Ajoute les scripts suivants :
+   ```json
+   "predeploy": "npm run build",
+   "deploy": "gh-pages -d build"
+   ```
+4. Déploie :
+   ```bash
+   npm run deploy
+   ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📁 Personnalisation
+- Remplace ta photo dans `public/photo.jpg`
+- Remplace ton CV dans `public/cv.pdf`
+- Modifie les données des projets dans `src/data/projects.json`
+- Personnalise les couleurs, textes, liens, etc.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## ✨ Crédits
+Développé par Abdessamad ELFOURI – Étudiant ingénieur en Intelligence Artificielle
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+> *"L'intelligence artificielle n'est pas le futur, c'est le présent qui façonne demain."*

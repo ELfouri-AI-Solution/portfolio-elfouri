@@ -7,26 +7,28 @@ import {
   MailIcon, 
   DownloadIcon 
 } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
+  const { t } = useLanguage();
 
   const socialLinks = [
     {
       name: 'GitHub',
-      href: 'https://github.com/elfouri-abdessamad',
+      href: 'https://github.com/ELfouri-AI-Solution',
       icon: GithubIcon,
       color: 'hover:text-gray-900 dark:hover:text-white'
     },
     {
       name: 'LinkedIn',
-      href: 'https://linkedin.com/in/abdessamad-elfouri',
+      href: 'https://www.linkedin.com/in/abdessamad-elfouri-a66a38370/',
       icon: LinkedinIcon,
       color: 'hover:text-blue-600'
     },
     {
       name: 'Email',
-      href: 'mailto:abdessamad.elfouri@example.com',
+      href: 'mailto:elfouri.ai.solution2026@gmail.com',
       icon: MailIcon,
       color: 'hover:text-red-600'
     }
@@ -45,20 +47,19 @@ const Footer: React.FC = () => {
               <span className="font-bold text-xl gradient-text">Abdessamad ELFOURI</span>
             </div>
             <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-              Étudiant ingénieur en Intelligence Artificielle passionné par l'innovation technologique 
-              et le développement de solutions intelligentes.
+              {t('footer.description')}
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-gray-900 dark:text-white">Navigation</h3>
+            <h3 className="font-semibold text-gray-900 dark:text-white">{t('footer.navigation')}</h3>
             <ul className="space-y-2">
               {[
-                { name: 'Accueil', href: '/' },
-                { name: 'À propos', href: '/about' },
-                { name: 'Projets', href: '/projects' },
-                { name: 'Contact', href: '/contact' }
+                { name: t('nav.home'), href: '/' },
+                { name: t('nav.about'), href: '/about' },
+                { name: t('nav.projects'), href: '/projects' },
+                { name: t('nav.contact'), href: '/contact' }
               ].map((link) => (
                 <li key={link.name}>
                   <Link
@@ -74,14 +75,14 @@ const Footer: React.FC = () => {
 
           {/* Contact & Social */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-gray-900 dark:text-white">Contact</h3>
+            <h3 className="font-semibold text-gray-900 dark:text-white">{t('footer.contact')}</h3>
             <div className="space-y-3">
               <a
-                href="mailto:abdessamad.elfouri@example.com"
+                href="mailto:elfouri.ai.solution2026@gmail.com"
                 className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 text-sm"
               >
                 <MailIcon className="w-4 h-4" />
-                <span>abdessamad.elfouri@example.com</span>
+                <span>elfouri.ai.solution2026@gmail.com</span>
               </a>
               
               <a
@@ -90,7 +91,7 @@ const Footer: React.FC = () => {
                 className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 text-sm"
               >
                 <DownloadIcon className="w-4 h-4" />
-                <span>Télécharger CV</span>
+                <span>{t('footer.download_cv')}</span>
               </a>
             </div>
 
@@ -117,10 +118,10 @@ const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-200 dark:border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-500 dark:text-gray-400 text-sm">
-            © {currentYear} Abdessamad ELFOURI. Tous droits réservés.
+            © {currentYear} Abdessamad ELFOURI. {t('footer.copyright')}
           </p>
           <p className="text-gray-400 dark:text-gray-500 text-xs mt-1">
-            Développé avec React, TypeScript et Tailwind CSS
+            {t('footer.developed_with')}
           </p>
         </div>
       </div>

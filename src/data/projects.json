@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Mini Chatbot IA",
+    "description": "Un chatbot intelligent en Python capable de répondre à des questions sur l'IA et l'informatique.",
+    "technologies": ["Python", "NLP", "Flask"],
+    "github": "https://github.com/elfouri-abdessamad/mini-chatbot-ia",
+    "image": "/chatbot-demo.png"
+  },
+  {
+    "title": "App Mobile IA Santé",
+    "description": "Application Android pour la détection de maladies à partir de symptômes, intégrant un modèle IA embarqué.",
+    "technologies": ["Android", "TensorFlow Lite", "Kotlin"],
+    "github": "https://github.com/elfouri-abdessamad/ia-sante-mobile",
+    "image": "/mobile-ia-demo.png"
+  },
+  {
+    "title": "Détection d'objets par caméra",
+    "description": "Système temps réel de détection d'objets via webcam, affichage des résultats sur interface web.",
+    "technologies": ["React", "YOLO", "Node.js"],
+    "github": "https://github.com/elfouri-abdessamad/detection-objet-cam",
+    "image": "/object-detection-demo.png"
+  },
+  {
+    "title": "Portfolio Web IA",
+    "description": "Ce portfolio moderne, responsive et animé, développé avec React, TypeScript et Tailwind CSS.",
+    "technologies": ["React", "TypeScript", "Tailwind CSS"],
+    "github": "https://github.com/elfouri-abdessamad/portfolio-ia",
+    "image": "/portfolio-demo.png"
+  }
+] 
