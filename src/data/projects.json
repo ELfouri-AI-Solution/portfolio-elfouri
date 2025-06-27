@@ -26,5 +26,12 @@
     "technologies": ["React", "TypeScript", "Tailwind CSS"],
     "github": "https://github.com/elfouri-abdessamad/portfolio-ia",
     "image": "/portfolio-demo.png"
+  },
+  {
+    "title": "Portfolio IA – Abdessamad ELFOURI",
+    "description": "Portfolio web moderne, responsive et animé, présentant mon parcours, mes compétences et mes projets en Intelligence Artificielle.",
+    "technologies": ["React.js", "TypeScript", "Tailwind CSS", "Framer Motion", "GitHub Pages"],
+    "github": "https://github.com/ELfouri-AI-Solution/portfolio-elfouri",
+    "image": "profile.jpg"
   }
 ] 
