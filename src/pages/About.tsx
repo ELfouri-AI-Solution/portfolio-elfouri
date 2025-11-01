@@ -74,12 +74,12 @@ const About: React.FC = () => (
             <img src={profileImage} alt="Abdessamad ELFOURI" className="w-20 h-20 rounded-full object-cover border-4 border-primary-600" />
             <div>
               <h2 className="text-2xl font-bold gradient-text">Abdessamad ELFOURI</h2>
-              <p className="text-primary-600 dark:text-primary-400 font-semibold">Étudiant 4ème année Ingénieur IA / Full stack développeur</p>
+              <p className="text-primary-600 dark:text-primary-400 font-semibold">Étudiant 5ème année Ingénieur IA / Full stack développeur</p>
               <p className="text-sm text-gray-500">Consultant en Solutions Digitales</p>
             </div>
           </div>
           <p className="text-gray-700 dark:text-gray-300 mb-2">
-            Passionné par l'innovation, la cybersécurité et le développement full stack, ma mission est de rendre la technologie plus sécurisée, intelligente et accessible. J'ai une solide expertise technique et une passion pour la création de solutions digitales innovantes. Fort de 5 années d'expérience dans le développement de sites web et d'applications multimédia, je maîtrise les langages de programmation modernes et les principes de design interactif. Mon engagement pour l'excellence et ma capacité à travailler en équipe me permettent de mener à bien des projets complexes, tout en garantissant une expérience utilisateur optimale.
+            Passionné par l'innovation , le développement full stack, ma mission est de rendre la technologie plus sécurisée, intelligente et accessible. J'ai une solide expertise technique et une passion pour la création de solutions digitales innovantes. Fort de 5 années d'expérience dans le développement de sites web et d'applications multimédia, je maîtrise les langages de programmation modernes et les principes de design interactif. Mon engagement pour l'excellence et ma capacité à travailler en équipe me permettent de mener à bien des projets complexes, tout en garantissant une expérience utilisateur optimale.
           </p>
           <blockquote className="italic text-primary-700 dark:text-primary-300 mt-4 border-l-4 border-primary-600 pl-4">
             "L'intelligence artificielle n'est pas le futur, c'est le présent qui façonne demain."
@@ -116,7 +116,7 @@ const About: React.FC = () => (
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
           <h3 className="flex items-center gap-2 text-lg font-semibold mb-2"><FaAwardIcon size={20} /> Diplômes & Formations</h3>
           <ul className="list-disc ml-5 text-gray-700 dark:text-gray-300 space-y-1">
-            <li>4ème année cycle ingénieurs, Intelligence artificielle (Depuis octobre 2024, ISMAGI Rabat)</li>
+            <li>5ème année cycle ingénieurs, Intelligence artificielle (Depuis octobre 2025, ISMAGI Rabat)</li>
             <li>Licence Pro, Développement Web et Mobile (Depuis août 2023, ISMAGI Rabat)</li>
             <li>Technicien Spécialisé en Développement Informatique (2023-2024, ISTA NTIC Rabat)</li>
             <li>Attestations : Routage, Big Data Analytics, C, HTML & CSS, IT Essentials, Get Connected, Python (ISTA NTIC Rabat)</li>

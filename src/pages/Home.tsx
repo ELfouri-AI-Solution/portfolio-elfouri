@@ -45,7 +45,7 @@ const Home: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.5 }}
         >
-          Étudiant 4ème année cycle Ingénieur IA / Full stack développeur | Consultant en Solutions Digitales
+          Étudiant 5ème année cycle d'ingénieur IA / Full stack développeur | Consultant en Solutions Digitales
         </motion.h2>
         <motion.p
           className="text-lg text-gray-700 dark:text-gray-300 mb-6 max-w-2xl mx-auto md:mx-0"
@@ -53,7 +53,7 @@ const Home: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.5 }}
         >
-          Je suis un étudiant en 4ème année de cycle ingénieur, passionné par l'innovation, la cybersécurité et le développement full stack. Ma mission est de rendre la technologie plus sécurisée, intelligente et accessible. Un poste expérimenté, je possède une solide expertise technique et une passion pour la création de solutions digitales innovantes. Fort de 5 années d'expérience dans le développement de sites web et d'applications multimédia, j'ai une maîtrise approfondie des langages de programmation modernes et des principes de design interactif. Mon engagement pour l'excellence et ma capacité à travailler en équipe me permettent de mener à bien des projets complexes, tout en garantissant une expérience utilisateur optimale.
+          Je suis un étudiant en 5ème année de cycle d'ingénieur, passionné par l'innovation, la cybersécurité et le développement full stack. Ma mission est de rendre la technologie plus sécurisée, intelligente et accessible. Un poste expérimenté, je possède une solide expertise technique et une passion pour la création de solutions digitales innovantes. Fort de 5 années d'expérience dans le développement de sites web et d'applications multimédia, j'ai une maîtrise approfondie des langages de programmation modernes et des principes de design interactif. Mon engagement pour l'excellence et ma capacité à travailler en équipe me permettent de mener à bien des projets complexes, tout en garantissant une expérience utilisateur optimale.
         </motion.p>
         <motion.div
           className="flex flex-wrap gap-4 mb-6 justify-center md:justify-start"
